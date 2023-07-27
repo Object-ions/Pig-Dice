@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pig Dice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Pig Dice!</h1>
+  </header>
+
+  <aside>
+    <button id="rules-btn" class="btn rules-btn">Show Rules</button>
+    <div id="rules" class="rules">
+      <h2>How to play:</h2>
+      <ol>
+        <li>Roll the dice for your turn.</li>
+        <li>Continue rolling the die until you're happy with the number of points you've scored.
+        <li>Click "hold" to save your score, track all points earned during your turn. and handing the die over to your
+          opponent.</li>
+        <li>In case you hit '1' you loose your points for that round, and the turn goes to your opponent.</li>
+        <li>Reach 100 points first and win the game.</li>
+      </ol>
+      <button class="btn" id="close-btn">Close</button>
+    </div>
+  </aside>
+
+  <article>
+    <form class="">
+      <label for="">Player 1:</label>
+      <input id="player-1-input-name" type="text"> <br>
+      <label for="">Player 2:</label>
+      <input id="player-2-input-name" type="text"><br> <button type="submit">Let's Play!</button>
+    </form>
+  </article>
+
+  <main>
+    <div id="goal-div" class="invisible">
+      <h1>Goal: 100 Points</h1>
+    </div>
+
+    <div id="player-1" class="container">
+      <h2> <span id="player-1-name"></span></h2>
+      <h3>Score: <span id="player-1-perm-score" class="perm-score">0</span></h3>
+      <h4 id="temp-score">Temporary Score: <span id="player-1-temp-score">0</span></h4>
+    </div>
+
+    <!-- middle div -->
+    <div id="middle-div" class="container">
+      <div id="dice-current-number" class="invisible">
+        <h2 id="display-dice-roll">0</h2>
+      </div>
+
+      <div id="buttons" class="buttons">
+        <button id="roll-dice">Roll the Dice</button>
+        <button id="hold">Hold</button>
+        <button id="new-game">New Game</button>
+      </div>
+    </div>
+
+    <!-- Player 2 -->
+    <div id="player-2" class="container">
+      <h2><span id="player-2-name"></span></h2>
+      <h3>Score: <span id="player-2-perm-score" class="perm-score">0</span></h3>
+      <h4 id="temp-score">Temporary Score: <span id="player-2-temp-score">0</span></h4>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
