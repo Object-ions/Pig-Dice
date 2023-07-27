@@ -30,46 +30,45 @@
     </div>
   </aside>
 
-  <article>
-    <form>
-      <h2>Let's Play!</h2>
-      <label>Player 1:</label>
-      <input id="player-1-input-name" type="text">
-      <label>Player 2:</label>
-      <input id="player-2-input-name" type="text">
-      <button type="submit" class="btn">Let's Play!</button>
-    </form>
-  </article>
+  <form>
+    <h2>Let's Play!</h2>
+    <label>Player 1:</label>
+    <input id="player-1-input-name" type="text">
+    <label>Player 2:</label>
+    <input id="player-2-input-name" type="text">
+    <button type="submit" class="btn">Let's Play!</button>
+  </form>
 
   <main>
     <div id="goal-div" class="invisible">
       <h1>Goal: 100 Points</h1>
     </div>
 
-    <div id="player-1" class="container">
-      <h2> <span id="player-1-name"></span></h2>
-      <h3>Score: <span id="player-1-perm-score" class="perm-score">0</span></h3>
-      <h4 id="temp-score">Temporary Score: <span id="player-1-temp-score">0</span></h4>
-    </div>
+    <div class="game-div">
 
-    <!-- middle div -->
-    <div id="middle-div" class="container">
-      <div id="dice-current-number" class="invisible">
-        <h2 id="display-dice-roll">0</h2>
+      <div id="player-1" class="container">
+        <h2> <span id="player-1-name">Player 1</span></h2>
+        <h3>Score: <span id="player-1-perm-score" class="perm-score">0</span></h3>
+        <h4 id="temp-score">Temporary Score: <span id="player-1-temp-score">0</span></h4>
       </div>
 
-      <div id="buttons" class="buttons">
-        <button id="roll-dice">Roll the Dice</button>
-        <button id="hold">Hold</button>
-        <button id="new-game">New Game</button>
-      </div>
-    </div>
+      <div id="middle-div" class="container">
+        <div id="dice-current-number" class="invisible">
+          <h2 id="display-dice-roll">0</h2>
+        </div>
 
-    <!-- Player 2 -->
-    <div id="player-2" class="container">
-      <h2><span id="player-2-name"></span></h2>
-      <h3>Score: <span id="player-2-perm-score" class="perm-score">0</span></h3>
-      <h4 id="temp-score">Temporary Score: <span id="player-2-temp-score">0</span></h4>
+        <div id="buttons" class="buttons">
+          <button id="roll-dice">Roll the Dice</button>
+          <button id="hold">Hold</button>
+          <button id="new-game">New Game</button>
+        </div>
+      </div>
+
+      <div id="player-2" class="container">
+        <h2><span id="player-2-name">Player 2</span></h2>
+        <h3>Score: <span id="player-2-perm-score" class="perm-score">0</span></h3>
+        <h4 id="temp-score">Temporary Score: <span id="player-2-temp-score">0</span></h4>
+      </div>
     </div>
 
   </main>
