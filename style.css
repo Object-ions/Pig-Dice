@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+header h1 {
+  font-size: 40px;
+}
+
 body {
   color: var(--dark-color);
   background-color: #fff;
@@ -26,11 +30,17 @@ main {
   text-align: center;
 }
 
+main h1 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--dark-color);
+}
+
 li {
   margin: 5px 0;
 }
 
 form {
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,14 +121,26 @@ button .btn {
   transition: transform 1s ease-in-out;
 }
 
-.rules-btn {
+#rules-btn {
   position: absolute;
   top: 30px;
   left: 30px;
 }
 
+#close-btn {
+  border: 1px solid var(--dark-color);
+}
+
 .rules.show {
   transform: translateX(0);
+}
+
+.show {
+  display: visible;
+}
+
+.hide {
+  display: none;
 }
 
 #dice-current-number {
@@ -128,8 +150,4 @@ button .btn {
 #display-dice-roll {
   background-color: #fff;
   padding: 10px;
-}
-
-#close-btn {
-  border: 1px solid var(--dark-color);
 }
