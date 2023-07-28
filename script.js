@@ -35,7 +35,7 @@ Game.prototype.addPlayer = function (player) {
 function Player(name) {
   this.name = name;
   this.tempScore = 0;
-  this.permScore = 0;
+  this.permScore = 99;
 };
 
 //UI logic:
@@ -154,8 +154,13 @@ holdButton.addEventListener('click', function () {
 });
 
 
-let newGame = document.getElementById('new-game');
+let newGame = document.querySelector('#new-game');
 newGame.addEventListener('click', function () {
+  window.location.reload();
+});
+
+let newGameOne = document.querySelector('#new-game-1');
+newGameOne.addEventListener('click', function () {
   window.location.reload();
 });
 
