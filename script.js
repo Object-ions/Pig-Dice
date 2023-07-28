@@ -18,7 +18,11 @@ Game.prototype.assignId = function () {
 Game.prototype.setActivePlayer = function () {
   if (this.currentPlayer === 1) {
     this.currentPlayer = 2;
+    document.getElementById('player-1-border').style.border = 'none';
+    document.getElementById('player-2-border').style.border = '1px solid black';
   } else if (this.currentPlayer === 2) {
+    document.getElementById('player-2-border').style.border = 'none';
+    document.getElementById('player-1-border').style.border = '1px solid black';
     this.currentPlayer = 1;
   }
 }
@@ -60,6 +64,7 @@ function rollResult1() {
 let form = document.querySelector('form');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
+  document.getElementById('player-1-border').style.border = '1px solid black';
   player1 = document.getElementById('player-1-input-name').value;
   player2 = document.getElementById('player-2-input-name').value;
   document.getElementById('player-1-name').innerText = player1.toUpperCase();
