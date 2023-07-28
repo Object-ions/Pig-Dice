@@ -19,10 +19,10 @@ Game.prototype.setActivePlayer = function () {
   if (this.currentPlayer === 1) {
     this.currentPlayer = 2;
     document.getElementById('player-1-border').style.border = 'none';
-    document.getElementById('player-2-border').style.border = '1px solid black';
+    document.getElementById('player-2-border').style.border = '1px solid #34444f';
   } else if (this.currentPlayer === 2) {
     document.getElementById('player-2-border').style.border = 'none';
-    document.getElementById('player-1-border').style.border = '1px solid black';
+    document.getElementById('player-1-border').style.border = '1px solid #34444f';
     this.currentPlayer = 1;
   }
 }
@@ -64,7 +64,7 @@ function rollResult1() {
 let form = document.querySelector('form');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
-  document.getElementById('player-1-border').style.border = '1px solid black';
+  document.getElementById('player-1-border').style.border = '1px solid #34444f';
   player1 = document.getElementById('player-1-input-name').value;
   player2 = document.getElementById('player-2-input-name').value;
   document.getElementById('player-1-name').innerText = player1.toUpperCase();
@@ -74,7 +74,7 @@ form.addEventListener('submit', function (event) {
   pigGame.addPlayer(player1Object);
   pigGame.addPlayer(player2Object);
   form.setAttribute('class', 'hidden')
-  let mainDiv = document.getElementById('main-div');
+  let mainDiv = document.getElementById('general-div');
   mainDiv.classList.remove("invisible");
   let goalDiv = document.getElementById('goal-div');
   goalDiv.classList.remove("invisible");
