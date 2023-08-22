@@ -1,6 +1,6 @@
 # Pig Dice Game - UI Reimagined
 
-#### By **Moshe Atia and Jason Church**
+#### By **Moshe Atia**
 
 The Pig Dice Game is an interactive, two-player dice game created using HTML, CSS, and JavaScript. The game is designed to test your luck as you compete against another player to reach a total score of 100 points first. The application keeps track of the scores for each player, and the state of the game, providing an engaging and dynamic user experience. in this version, I've added new functionalities and revamped the UI to provide an even more engaging and dynamic user experience.
 
@@ -8,6 +8,7 @@ _Live demo: [GH-pages](#)_
 
 ## Original Project
 [Explore the original project here](https://github.com/Object-ions/pig-dice-v2.git).
+#### By **Moshe Atia and Jason Church**
 
 ## Technologies Used
 
