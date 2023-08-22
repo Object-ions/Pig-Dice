@@ -19,10 +19,10 @@ Game.prototype.setActivePlayer = function () {
   if (this.currentPlayer === 1) {
     this.currentPlayer = 2;
     document.getElementById('player-1-border').style.border = 'none';
-    document.getElementById('player-2-border').style.border = '1px solid #34444f';
+    document.getElementById('player-2-border').style.border = '2px solid #34444f';
   } else if (this.currentPlayer === 2) {
     document.getElementById('player-2-border').style.border = 'none';
-    document.getElementById('player-1-border').style.border = '1px solid #34444f';
+    document.getElementById('player-1-border').style.border = '2px solid #34444f';
     this.currentPlayer = 1;
   }
 }
@@ -35,7 +35,7 @@ Game.prototype.addPlayer = function (player) {
 function Player(name) {
   this.name = name;
   this.tempScore = 0;
-  this.permScore = 99;
+  this.permScore = 0;
 };
 
 //UI logic:
@@ -64,7 +64,7 @@ function rollResult1() {
 let form = document.querySelector('form');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
-  document.getElementById('player-1-border').style.border = '1px solid #34444f';
+  document.getElementById('player-1-border').style.border = '2px solid #34444f';
   player1 = document.getElementById('player-1-input-name').value;
   player2 = document.getElementById('player-2-input-name').value;
   document.getElementById('player-1-name').innerText = player1.toUpperCase();
